@@ -2,667 +2,278 @@
 
 /* Estilo global para html y body */
 html, body {
-    height: 100%; /* Asegura que el contenedor principal ocupe toda la altura de la ventana */
-    margin: 0; /* Elimina el margen predeterminado */
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fuente principal */
-    background-color: #f0f0f0; /* Color de fondo suave para toda la página */
+    height: 100%;
+    margin: 0;
+    font-family: 'Roboto', sans-serif; /* Fuente principal de Google Fonts */
+    background-color: #f8f9fa; /* Color de fondo suave para toda la página */
 }
 
 /* Estilo para el cuerpo de la página */
 body {
-    display: flex; /* Usa flexbox para el diseño */
-    flex-direction: column; /* Organiza el contenido verticalmente */
-    min-height: 100vh; /* Asegura que el cuerpo ocupe al menos toda la altura de la ventana */
-    background-color: #534f4f; /* Color de fondo más oscuro */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #343a40; /* Color de fondo más oscuro */
 }
 
 /* Estilo para el encabezado */
 header {
-    background: #000; /* Color de fondo negro */
-    color: #fff; /* Color de texto blanco */
-    padding: 1rem 2rem; /* Espaciado interno */
-    text-align: center; /* Alineación de texto al centro */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    background: #212529; /* Color de fondo negro */
+    color: #fff;
+    padding: 1rem 2rem;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 /* Estilo para el título del encabezado */
 header h1 {
-    margin: 0; /* Elimina márgenes */
-    font-size: 2.5rem; /* Tamaño de fuente más grande */
-    color: #ff0000; /* Color del nombre de Inventec en rojo */
+    margin: 0;
+    font-size: 2.5rem;
+    color: #ff4757; /* Color del nombre de Inventec en rojo */
 }
 
 /* Estilo para la barra de navegación */
 nav {
-    background: #222; /* Color de fondo gris oscuro */
-    padding: 0.5rem 2rem; /* Espaciado interno */
-    position: sticky; /* Hace que el nav permanezca fijo al hacer scroll */
-    top: 0; /* Posiciona el nav en la parte superior */
-    z-index: 1000; /* Asegura que el nav esté sobre otros elementos */
-    background: rgba(34, 34, 34, 0.8); /* Fondo con opacidad */
-    transition: background 0.3s ease; /* Transición suave para el cambio de fondo */
+    background: rgba(33, 37, 41, 0.8); /* Fondo con opacidad */
+    padding: 0.5rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    transition: background 0.3s ease;
 }
 
 /* Cambio de color de fondo al hacer scroll */
 nav.scrolled {
-    background: #000; /* Fondo negro al hacer scroll */
+    background: #212529; /* Fondo negro al hacer scroll */
 }
 
 /* Estilo para la lista de navegación */
 nav ul {
-    list-style: none; /* Elimina los puntos de lista */
-    margin: 0; /* Elimina márgenes */
-    padding: 0; /* Elimina padding */
-    display: flex; /* Usa flexbox para alinear horizontalmente */
-    justify-content: center; /* Centra los elementos de la lista */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
 }
 
 /* Estilo para los elementos de la lista de navegación */
 nav ul li {
-    margin: 0 15px; /* Espaciado entre los elementos */
+    margin: 0 15px;
 }
 
 /* Estilo para los enlaces de navegación */
 nav ul li a {
-    color: #fff; /* Color del texto blanco */
-    text-decoration: none; /* Elimina el subrayado */
-    font-size: 1.1rem; /* Tamaño de fuente */
-    transition: color 0.3s ease, text-decoration 0.3s ease; /* Transición suave para el color y el subrayado */
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
 }
 
 /* Efecto hover para los enlaces de navegación */
 nav ul li a:hover {
-    color: #ff0000; /* Color rojo al pasar el cursor */
-    text-decoration: underline; /* Subrayado al pasar el cursor */
+    color: #ff4757; /* Color rojo al pasar el cursor */
+    text-decoration: underline;
 }
 
 /* Estilo para el área principal del contenido */
 main {
-    flex: 1; /* Permite que el main ocupe el espacio restante */
-    padding: 2rem; /* Espaciado interno */
-    background-color: #4b4444; /* Color de fondo más oscuro */
+    flex: 1;
+    padding: 2rem;
+    background-color: #495057; /* Color de fondo más oscuro */
 }
 
 /* Estilo para las secciones dentro del main */
 section {
-   /* display: flex; /* Usa flexbox para alinear el contenido */
-   /* align-items: center; /* Alinea verticalmente el contenido */
-    justify-content: space-between; /* Distribuye el espacio entre el texto y la imagen */
-    margin-bottom: 2rem; /* Espaciado entre secciones */
-    padding: 1.5rem; /* Espaciado interno */
-    border-radius: 8px; /* Bordes redondeados */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
-    background: #ffffff; /* Fondo blanco */
-    transition: box-shadow 0.3s ease, transform 0.3s ease; /* Transición suave para sombra y transformación */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background: #ffffff;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 
 /* Efecto hover para las secciones */
 section:hover {
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
     transform: translateY(-8px);
-    transition: all 0.3s ease-in-out;
 }
-
 
 /* Estilo para los encabezados de las secciones */
 section h2 {
-    background: #f5f5f5; /* Fondo gris claro para el encabezado */
-    color: #333; /* Color de texto gris oscuro */
-    padding: 0.5rem 1rem; /* Espaciado interno */
-    border-left: 6px solid #ff0000; /* Línea roja a la izquierda del encabezado */
-    font-size: 1.8rem; /* Tamaño de fuente */
-    margin-bottom: 1rem; /* Espaciado inferior */
+    background: #f5f5f5;
+    color: #333;
+    padding: 0.5rem 1rem;
+    border-left: 6px solid #ff4757; /* Línea roja a la izquierda del encabezado */
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
 }
 
 /* Estilo para el pie de página */
 footer {
-    background: #000; /* Color de fondo negro */
-    color: #fff; /* Color de texto blanco */
-    text-align: center; /* Alineación de texto al centro */
-    padding: 1rem 2rem; /* Espaciado interno */
-    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    background: #212529;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 2rem;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
 }
 
 /* Estilo para el texto en el pie de página */
 footer p {
-    margin: 0; /* Elimina márgenes */
-    font-size: 0.9rem; /* Tamaño de fuente más pequeño */
+    margin: 0;
+    font-size: 0.9rem;
 }
 
 /* Estilo para los enlaces en el pie de página */
 footer a {
-    color: #ff0000; /* Color rojo para los enlaces */
-    text-decoration: none; /* Elimina el subrayado */
-    font-weight: bold; /* Fuente en negrita */
-    transition: text-decoration 0.3s ease; /* Transición suave para el subrayado */
+    color: #ff4757;
+    text-decoration: none;
+    font-weight: bold;
+    transition: text-decoration 0.3s ease;
 }
 
 /* Efecto hover para los enlaces en el pie de página */
 footer a:hover {
-    text-decoration: underline; /* Subrayado al pasar el cursor */
+    text-decoration: underline;
 }
 
 /* Estilo para las imágenes dentro de las secciones */
 section img {
-    display: block; /* Alinea las imágenes en bloque */
-    margin: 0 0 10px 20px; /* Espaciado entre la imagen y el texto */
-    max-width: 100%; /* Asegura que la imagen no exceda el tamaño del contenedor */
-    border-radius: 8px; /* Bordes redondeados */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave para transformación y sombra */
+    display: block;
+    margin: 0 0 10px 20px;
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 /* Efecto hover para las imágenes */
 section img:hover {
-    transform: scale(1.2); /* Aumenta el tamaño de la imagen al pasar el cursor */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
+    transform: scale(1.2);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 /* Estilo específico para las imágenes de topología */
 section img.topology-model {
-    width: 25%; /* Reduce al 25% del tamaño original */
-    height: auto; /* Mantiene la proporción de la imagen */
+    width: 25%;
+    height: auto;
 }
 
 /* Estilo para los botones */
 button {
-    background: #ff0000; /* Color de fondo rojo */
-    color: #fff; /* Color de texto blanco */
-    border: none; /* Sin borde */
-    border-radius: 4px; /* Bordes redondeados */
-    padding: 10px 20px; /* Espaciado interno */
-    font-size: 1rem; /* Tamaño de fuente */
-    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
-    transition: background 0.3s ease; /* Transición suave para el color de fondo */
-image-resolution: 400px;
+    background: #ff4757;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
 }
 
 /* Efecto hover para los botones */
 button:hover {
-    background: #e60000; /* Color de fondo más oscuro al pasar el cursor */
+    background: #e60000;
 }
 
 /* Estilo para los formularios */
 input, textarea, select {
-    border: 1px solid #ccc; /* Borde gris claro *//* styles.css */
-
-    /* Estilo global para html y body */
-    html, body {
-        height: 100%;
-        margin: 0;
-        font-family: 'Roboto', sans-serif; /* Fuente principal de Google Fonts */
-        background-color: #f8f9fa; /* Color de fondo suave para toda la página */
-    }
-    
-    /* Estilo para el cuerpo de la página */
-    body {
-        display: flex;
-        flex-direction: column;
-        min-height: 100vh;
-        background-color: #343a40; /* Color de fondo más oscuro */
-    }
-    
-    /* Estilo para el encabezado */
-    header {
-        background: #212529; /* Color de fondo negro */
-        color: #fff;
-        padding: 1rem 2rem;
-        text-align: center;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    }
-    
-    /* Estilo para el título del encabezado */
-    header h1 {
-        margin: 0;
-        font-size: 2.5rem;
-        color: #ff4757; /* Color del nombre de Inventec en rojo */
-    }
-    
-    /* Estilo para la barra de navegación */
-    nav {
-        background: rgba(33, 37, 41, 0.8); /* Fondo con opacidad */
-        padding: 0.5rem 2rem;
-        position: sticky;
-        top: 0;
-        z-index: 1000;
-        transition: background 0.3s ease;
-    }
-    
-    /* Cambio de color de fondo al hacer scroll */
-    nav.scrolled {
-        background: #212529; /* Fondo negro al hacer scroll */
-    }
-    
-    /* Estilo para la lista de navegación */
-    nav ul {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-        display: flex;
-        justify-content: center;
-    }
-    
-    /* Estilo para los elementos de la lista de navegación */
-    nav ul li {
-        margin: 0 15px;
-    }
-    
-    /* Estilo para los enlaces de navegación */
-    nav ul li a {
-        color: #fff;
-        text-decoration: none;
-        font-size: 1.1rem;
-        transition: color 0.3s ease, text-decoration 0.3s ease;
-    }
-    
-    /* Efecto hover para los enlaces de navegación */
-    nav ul li a:hover {
-        color: #ff4757; /* Color rojo al pasar el cursor */
-        text-decoration: underline;
-    }
-    
-    /* Estilo para el área principal del contenido */
-    main {
-        flex: 1;
-        padding: 2rem;
-        background-color: #495057; /* Color de fondo más oscuro */
-    }
-    
-    /* Estilo para las secciones dentro del main */
-    section {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        margin-bottom: 2rem;
-        padding: 1.5rem;
-        border-radius: 8px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        background: #ffffff;
-        transition: box-shadow 0.3s ease, transform 0.3s ease;
-    }
-    
-    /* Efecto hover para las secciones */
-    section:hover {
-        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-        transform: translateY(-8px);
-    }
-    
-    /* Estilo para los encabezados de las secciones */
-    section h2 {
-        background: #f5f5f5;
-        color: #333;
-        padding: 0.5rem 1rem;
-        border-left: 6px solid #ff4757; /* Línea roja a la izquierda del encabezado */
-        font-size: 1.8rem;
-        margin-bottom: 1rem;
-    }
-    
-    /* Estilo para el pie de página */
-    footer {
-        background: #212529;
-        color: #fff;
-        text-align: center;
-        padding: 1rem 2rem;
-        box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
-    }
-    
-    /* Estilo para el texto en el pie de página */
-    footer p {
-        margin: 0;
-        font-size: 0.9rem;
-    }
-    
-    /* Estilo para los enlaces en el pie de página */
-    footer a {
-        color: #ff4757;
-        text-decoration: none;
-        font-weight: bold;
-        transition: text-decoration 0.3s ease;
-    }
-    
-    /* Efecto hover para los enlaces en el pie de página */
-    footer a:hover {
-        text-decoration: underline;
-    }
-    
-    /* Estilo para las imágenes dentro de las secciones */
-    section img {
-        display: block;
-        margin: 0 0 10px 20px;
-        max-width: 100%;
-        border-radius: 8px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-    
-    /* Efecto hover para las imágenes */
-    section img:hover {
-        transform: scale(1.2);
-        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    }
-    
-    /* Estilo específico para las imágenes de topología */
-    section img.topology-model {
-        width: 25%;
-        height: auto;
-    }
-    
-    /* Estilo para los botones */
-    button {
-        background: #ff4757;
-        color: #fff;
-        border: none;
-        border-radius: 4px;
-        padding: 10px 20px;
-        font-size: 1rem;
-        cursor: pointer;
-        transition: background 0.3s ease;
-    }
-    
-    /* Efecto hover para los botones */
-    button:hover {
-        background: #e60000;
-    }
-    
-    /* Estilo para los formularios */
-    input, textarea, select {
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        padding: 10px;
-        width: 100%;
-        box-sizing: border-box;
-        transition: border-color 0.3s ease;
-    }
-    
-    /* Efecto focus para los formularios */
-    input:focus, textarea:focus, select:focus {
-        border-color: #ff4757;
-        outline: none;
-    }
-    
-    /* Estilo para secciones con efecto parallax */
-    .parallax {
-        background-image: url('tu-imagen-de-fondo.jpg');
-        height: 500px;
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    
-    /* Estilo para las tarjetas */
-    .card {
-        border-radius: 8px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        padding: 1.5rem;
-        background: #fff;
-        transition: box-shadow 0.3s ease;
-    }
-    
-    /* Efecto hover para las tarjetas */
-    .card:hover {
-        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    }
-    
-    /* Estilo para la tipografía y espaciado */
-    h1, h2, h3, h4, h5, h6 {
-        font-weight: bold;
-        line-height: 1.4;
-    }
-    
-    p {
-        margin-bottom: 1.5rem;
-        line-height: 1.6;
-    }
-    
-    /* Estilos responsivos para pantallas pequeñas */
-    @media (max-width: 768px) {
-        header h1 {
-            font-size: 2rem;
-        }
-    
-        nav ul {
-            flex-direction: column;
-        }
-    
-        nav ul li {
-            margin: 10px 0;
-        }
-    
-        section {
-            padding: 1rem;
-        }
-    }
-    
-    /* Estilo para el botón flotante */
-    #scrollToTopBtn {
-        position: fixed;
-        bottom: 20px;
-        right: 20px;
-        opacity: 0;
-        transition: opacity 1s;
-        background-color: #ff4757;
-        color: white;
-        border: none;
-        border-radius: 50%;
-        width: 50px;
-        height: 50px;
-        font-size: 24px;
-        cursor: pointer;
-        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-    }
-    
-    #scrollToTopBtn.show {
-        opacity: 1;
-    }
-    
-    #scrollToTopBtn:hover {
-        background-color: #c62828;
-    }
-    
-    /* Estilo para la sección de información de red */
-    .network-info {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-    }
-    
-    .content {
-        display: flex;
-        align-items: center;
-        gap: 15px;
-    }
-    
-    .content img {
-        max-width: 200px;
-        height: auto;
-    }
-    
-    /* Estilo para el botón flotante */
-    #scrollToTopBtn {
-        position: fixed;
-        bottom: 20px;
-        right: 20px;
-        opacity: 0;
-        transition: opacity 1s;
-        background-color: #ff4757;
-        color: white;
-        border: none;
-        border-radius: 50%;
-        width: 50px;
-        height: 50px;
-        font-size: 24px;
-        cursor: pointer;
-        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-    }
-    
-    #scrollToTopBtn.show {
-        opacity: 1;
-    }
-    
-    #scrollToTopBtn:hover {
-        background-color: #c62828;
-    }
-    
-    .overlay {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: rgba(255, 255, 255, 0.95);
-        color: rgb(255, 0, 0);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        opacity: 0;
-        transition: opacity 0.5s;
-    }
-    
-    section:hover .overlay {
-        opacity: 1;
-    }
-    
-    .overlay-content {
-        text-align: center;
-        padding: 20px;
-    }
-    
-    h2 {
-        margin-top: 0;
-    }
-    
-    pre {
-        background: #f4f4f4;
-        padding: 10px;
-        border-radius: 5px;
-        overflow-x: auto;
-    }
-    
-    center img {
-        width: 100%;
-        max-width: 400px;
-    }
-    
-    /* Estilos para el modal */
-    .modal {
-        display: none;
-        position: fixed;
-        z-index: 1;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        overflow: auto;
-        background-color: rgba(0,0,0,0.4);
-    }
-    
-    .modal-content {
-        background-color: #fefefe;
-        margin: 15% auto;
-        padding: 20px;
-        border: 1px solid #888;
-        width: 80%;
-        animation: fadeIn 0.5s;
-    }
-    
-    /* Animación para el modal */
-    @keyframes fadeIn {
-        from { opacity: 0; }
-        to { opacity: 1; }
-    }
-    border-radius: 4px; /* Bordes redondeados */
-    padding: 10px; /* Espaciado interno */
-    width: 100%; /* Ancho completo del contenedor */
-    box-sizing: border-box; /* Incluye el padding en el ancho total */
-    transition: border-color 0.3s ease; /* Transición suave para el color del borde */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
 }
 
 /* Efecto focus para los formularios */
 input:focus, textarea:focus, select:focus {
-    border-color: #ff0000; /* Color del borde rojo al enfocar */
-    outline: none; /* Elimina el contorno predeterminado */
+    border-color: #ff4757;
+    outline: none;
 }
 
 /* Estilo para secciones con efecto parallax */
 .parallax {
     background-image: url('tu-imagen-de-fondo.jpg');
-    height: 500px; /* Ajusta según sea necesario */
+    height: 500px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-
 /* Estilo para las tarjetas */
 .card {
-    border-radius: 8px; /* Bordes redondeados */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
-    padding: 1.5rem; /* Espaciado interno */
-    background: #fff; /* Fondo blanco */
-    transition: box-shadow 0.3s ease; /* Transición suave para la sombra */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    background: #fff;
+    transition: box-shadow 0.3s ease;
 }
 
 /* Efecto hover para las tarjetas */
 .card:hover {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada al pasar el cursor */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 /* Estilo para la tipografía y espaciado */
 h1, h2, h3, h4, h5, h6 {
-    font-weight: bold; /* Fuente en negrita */
-    line-height: 1.4; /* Altura de línea más amplia */
+    font-weight: bold;
+    line-height: 1.4;
 }
 
 p {
-    margin-bottom: 1.5rem; /* Espaciado inferior */
-    line-height: 1.6; /* Altura de línea más amplia */
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
 }
 
 /* Estilos responsivos para pantallas pequeñas */
 @media (max-width: 768px) {
     header h1 {
-        font-size: 2rem; /* Tamaño de fuente más pequeño en pantallas pequeñas */
+        font-size: 2rem;
     }
 
     nav ul {
-        flex-direction: column; /* Organiza los elementos de la lista verticalmente */
+        flex-direction: column;
     }
 
     nav ul li {
-        margin: 10px 0; /* Espaciado vertical entre elementos */
+        margin: 10px 0;
     }
 
     section {
-        padding: 1rem; /* Espaciado interno más pequeño */
+        padding: 1rem;
     }
 }
+
 /* Estilo para el botón flotante */
 #scrollToTopBtn {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    opacity: 0; /* Inicialmente invisible */
-    transition: opacity 1s; /* Transición de opacidad de 1 segundo */
-    background-color: #f44336; /* Color de fondo */
-    color: white; /* Color del texto */
-    border: none; /* Sin bordes */
-    border-radius: 50%; /* Forma circular */
-    width: 50px; /* Ancho */
-    height: 50px; /* Altura */
-    font-size: 24px; /* Tamaño del texto */
-    cursor: pointer; /* Cursor en forma de mano */
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Sombra */
+    opacity: 0;
+    transition: opacity 1s;
+    background-color: #ff4757;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
 #scrollToTopBtn.show {
-    opacity: 1; /* Hacer visible */
+    opacity: 1;
 }
 
 #scrollToTopBtn:hover {
-    background-color: #c62828; /* Color de fondo al pasar el mouse */
+    background-color: #c62828;
 }
+
 /* Estilo para la sección de información de red */
 .network-info {
     display: flex;
@@ -673,11 +284,11 @@ p {
 .content {
     display: flex;
     align-items: center;
-    gap: 15px; /* Espacio entre el texto y la imagen */
+    gap: 15px;
 }
 
 .content img {
-    max-width: 200px; /* Ajusta según sea necesario */
+    max-width: 200px;
     height: auto;
 }
 
@@ -686,33 +297,34 @@ p {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    opacity: 0; /* Inicialmente invisible */
-    transition: opacity 1s; /* Transición de opacidad de 1 segundo */
-    background-color: #f44336; /* Color de fondo */
-    color: white; /* Color del texto */
-    border: none; /* Sin bordes */
-    border-radius: 50%; /* Forma circular */
-    width: 50px; /* Ancho */
-    height: 50px; /* Altura */
-    font-size: 24px; /* Tamaño del texto */
-    cursor: pointer; /* Cursor en forma de mano */
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Sombra */
+    opacity: 0;
+    transition: opacity 1s;
+    background-color: #ff4757;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
 #scrollToTopBtn.show {
-    opacity: 1; /* Hacer visible */
+    opacity: 1;
 }
 
 #scrollToTopBtn:hover {
-    background-color: #c62828; /* Color de fondo al pasar el mouse */
+    background-color: #c62828;
 }
+
 .overlay {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(255, 255, 255, 0.95); /* Black background with 95% opacity */
+    background: rgba(255, 255, 255, 0.95);
     color: rgb(255, 0, 0);
     display: flex;
     justify-content: center;
@@ -745,44 +357,31 @@ center img {
     width: 100%;
     max-width: 400px;
 }
+
 /* Estilos para el modal */
 .modal {
-    display: none; 
-    position: fixed; 
-    z-index: 1; 
+    display: none;
+    position: fixed;
+    z-index: 1;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
-    overflow: auto; 
-    background-color: rgba(0,0,0,0.4); 
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
 }
 
 .modal-content {
     background-color: #fefefe;
-    margin: 15% auto; 
+    margin: 15% auto;
     padding: 20px;
     border: 1px solid #888;
-    width: 80%; 
-    animation: fadeIn 0.5s; /* Efecto de aparición */
+    width: 80%;
+    animation: fadeIn 0.5s;
 }
 
-.close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-    color: red;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-/* Animación de aparición */
+/* Animación para el modal */
 @keyframes fadeIn {
-    from {opacity: 0;}
-    to {opacity: 1;}
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
