@@ -98,9 +98,11 @@ section {
 
 /* Efecto hover para las secciones */
 section:hover {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
-    transform: translateY(-5px); /* Levanta la sección al pasar el cursor */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    transform: translateY(-8px);
+    transition: all 0.3s ease-in-out;
 }
+
 
 /* Estilo para los encabezados de las secciones */
 section h2 {
@@ -197,12 +199,15 @@ input:focus, textarea:focus, select:focus {
 }
 
 /* Estilo para secciones con efecto parallax */
-section.parallax {
-    background: url('tu-imagen-de-fondo.jpg') no-repeat center center fixed; /* Imagen de fondo fija con ajuste centralizado */
-    background-size: cover; /* Asegura que la imagen cubra toda el área */
-    padding: 2rem; /* Espaciado interno */
-    color: #fff; /* Color de texto blanco */
+.parallax {
+    background-image: url('tu-imagen-de-fondo.jpg');
+    height: 500px; /* Ajusta según sea necesario */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+
 
 /* Estilo para las tarjetas */
 .card {
@@ -353,4 +358,45 @@ pre {
 center img {
     width: 100%;
     max-width: 400px;
+}
+/* Estilos para el modal */
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.4); 
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; 
+    animation: fadeIn 0.5s; /* Efecto de aparición */
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Animación de aparición */
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
 }
