@@ -60,6 +60,6 @@ Si tienes preguntas o necesitas más información, no dudes en enviarnos un corr
 
 ## 🚀 Publicado con GitHub Pages
 
-Este curso está disponible en [GitHub Pages](https://tusuario.github.io/nombre-del-repositorio/).
+Este curso está disponible en [GitHub Pages](https://kaleb75.github.io/CursoWeb/).
 
 ¡Bienvenido al mundo del Networking! 🚀
