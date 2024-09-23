@@ -40,3 +40,12 @@ window.onscroll = function() {
 document.getElementById('scrollToTopBtn').onclick = function() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
 };
+function copyEmail() {
+    navigator.clipboard.writeText('chavira.kaleb@inventec.com').then(function() {
+        var modal = document.getElementById('emailModal');
+        modal.style.display = 'block';
+        modal.classList.add('fade-in');
+    }, function(err) {
+        console.error('Error al copiar el correo: ', err);
+    });
+}
